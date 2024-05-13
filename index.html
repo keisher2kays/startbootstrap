@@ -2,10 +2,11 @@
  <html lang="en">
  <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    
@@ -18,10 +19,11 @@
    
 
     <div class="navigation">
-    <div class="container">
+     
+     <div class="container">
         <p>START BOOTSTRAP</p>
 
-        <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+        <!-- <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
         <label for="menu-icon"></label>
         <nav class="nav"> 		
             <ul class="pt-5">
@@ -30,12 +32,51 @@
                 <li><a href="#">Contact</a></li>
                 
             </ul>
-        </nav>
+        </nav> --> 
+        <!-- <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Merch</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       -->
+
+       <div id="menuArea">
+        <input type="checkbox" id="menuToggle"></input>
       
+      <label for="menuToggle" class="menuOpen">
+        <div class="open"></div>
+      </label>
+      
+      <div class="menu menuEffects">
+        <label for="menuToggle"></label>
+        <div class="menuContent">
+          <ul>
+            <li><a href="#portfolio2">PORTFOLIO</a></li>
+            <li><a href="#about2">ABOUT</a></li>
+            <li><a href="#contact2">CONTACT</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      </div>
+
 <div class="kayke">
-    <a href="#">PORTFOLIO</a>
-    <a href="#">ABOUT</a>
-    <a href="#">CONTACT</a>
+
+    
+    <a href="#portfolio2">PORTFOLIO</a>
+    <a href="#about2">ABOUT</a>
+    <a href="#contact2">CONTACT</a>
 </div>
      </div>
     </div>
@@ -47,7 +88,7 @@
         <div class="image">
             <img src="avataaars.svg" alt="avator" class="img.fluid">
         </div>
-        
+      
            <div class="head">
             <h1>START BOOTSTRAP  </h1>
 
@@ -66,6 +107,8 @@
 </div>
 
 <!-- portfolio -->
+<section id="portfolio2">
+
 <div class="portfolio">
     <div class="container">
         <div class="head">
@@ -108,13 +151,13 @@
 
 </div> 
 </div>
-
+</section>
 
 <!-- About -->
 
    
-
-<section class="about">
+<section id="about2">
+<div class="about">
     
     <div class="container">
 
@@ -146,6 +189,7 @@
 
 
 <!-- contact -->
+<section id="contact2">
 <div class="contact">
     <div class="container">
        
@@ -189,17 +233,10 @@
 
 
 </div>
-
-
-
-
-
-</div>
-
-
-    </div>
 </div>
 </div>
+</div>
+</section>
 
 
 
@@ -269,6 +306,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+   <script src="dom.js"></script>
  </body> 
  </html> 
