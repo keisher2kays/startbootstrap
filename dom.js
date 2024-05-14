@@ -9,7 +9,13 @@ document.addEventListener('scroll',()=>{
 })
 
 
-$('.menu-burger, .menu-items').on('click', function() {
-    $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
-    $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
+document.addEventListener('DOMContentLoaded', function () {
+    const menuLinks = document.querySelectorAll('#menuArea .menuContent a');
+  
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('menuToggle').checked = false;
+      });
+    });
   });
+  
